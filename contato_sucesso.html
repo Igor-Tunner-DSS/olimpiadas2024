@@ -1,0 +1,85 @@
+<!--
+ideias: https://www.youtube.com/watch?v=Kf4BP-WLkVs&ab_channel=CodingSnow
+
+destaque: atributo necessário para aquele esporte, nesse caso "mira"
+desafios: desafios no caminho do atleta para ser o melhor
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Olimpíadas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site sobre o esporte tiro esportivo">
+    <meta name="keywords" content="olimpiadas, tiro, olimpico, modalidade">
+    <meta name="author" content="igor">
+    <link rel="shortcut icon" href="files/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="contato">
+
+    <header id="light">
+        <span class="icon"><a href="index.html"><img src="files/paris_logo.svg" alt="olympics logo" width="60px"></a></span>
+        <ul id="header-container">
+            <li class="nav-link hide-on-mobile"><a href="sobre.html">sobre</a></li>
+            <li class="nav-link hide-on-mobile"><a href="destaque.html">destaque</a></li>
+            <li class="nav-link hide-on-mobile"><a href="desafios.html">desafios</a></li>
+            <li class="nav-link hide-on-mobile"><a href="medalhas.html">medalhas</a></li>
+            <li class="nav-link hide-on-mobile active" id="nav-link-contato"><a href="contato.html">contato</a></li>
+            <li onclick="showSidebar()" class="nav-link" id="menu-button"><img src="files/menu_icon.svg" alt="menu button"></li>
+        </ul>
+
+        <ul id="sidebar">
+            <li onclick="hideSidebar()" class="nav-link" id="close-menu-button"><img src="files/close_icon.svg" alt="close menu button"></li>
+            <a href="sobre.html"><li class="nav-link active">sobre</li></a>
+            <a href="destaque.html"><li class="nav-link">destaque</li></a>
+            <a href="desafios.html"><li class="nav-link">desafios</li></a>
+            <a href="medalhas.html"><li class="nav-link">medalhas</li></a>
+            <a href="contato.html"><li class="nav-link">contato</li></a>
+        </ul>
+        
+    </header>
+    <hr>
+
+    <main>
+        <section id="header">
+            <div class="title" title="Obrigado!">Obrigado!</div>
+            <div class="hover"></div>
+            <div class="subtitle">Suas considerações foram enviadas com sucesso!</div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-title">Menu</div>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="sobre.html">sobre</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="destaque.html">destaque</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="desafios.html">desafios</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="medalhas.html">medalhas</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="contato.html">contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-container">
+                <div>Igor Tunner &copy; 2024 <br> Todos os direitos reservados</div>
+                <div>trabalho acadêmico sem fins lucrativos</div>
+            </div>
+        </div>
+        <a href="#"><div id="anchor"><img src="files/up_double_arrow.svg" width="40px"></div></a>
+    </footer>
+    
+</body>
+</html>

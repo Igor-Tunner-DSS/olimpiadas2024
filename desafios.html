@@ -1,0 +1,159 @@
+<!--
+ideias: https://www.youtube.com/watch?v=Kf4BP-WLkVs&ab_channel=CodingSnow
+
+destaque: atributo necessário para aquele esporte, nesse caso "mira"
+desafios: desafios no caminho do atleta para ser o melhor
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Olimpíadas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site sobre o esporte tiro esportivo">
+    <meta name="keywords" content="olimpiadas, tiro, olimpico, modalidade">
+    <meta name="author" content="igor">
+    <link rel="shortcut icon" href="files/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="script.js"></script>
+</head>
+<body id="desafios">
+
+    <header>
+        <span class="icon"><a href="index.html"><img src="files/paris_logo.svg" alt="olympics logo" width="60px"></a></span>
+        <ul id="header-container">
+            <li class="nav-link hide-on-mobile"><a href="sobre.html">sobre</a></li>
+            <li class="nav-link hide-on-mobile"><a href="destaque.html">destaque</a></li>
+            <li class="nav-link hide-on-mobile active"><a href="desafios.html">desafios</a></li>
+            <li class="nav-link hide-on-mobile"><a href="medalhas.html">medalhas</a></li>
+            <li class="nav-link hide-on-mobile" id="nav-link-contato"><a href="contato.html">contato</a></li>
+            <li onclick="showSidebar()" class="nav-link" id="menu-button"><img src="files/menu_icon.svg" alt="menu button"></li>
+        </ul>
+
+        <ul id="sidebar">
+            <li onclick="hideSidebar()" class="nav-link" id="close-menu-button"><img src="files/close_icon.svg" alt="close menu button"></li>
+            <a href="sobre.html"><li class="nav-link active">sobre</li></a>
+            <a href="destaque.html"><li class="nav-link">destaque</li></a>
+            <a href="desafios.html"><li class="nav-link">desafios</li></a>
+            <a href="medalhas.html"><li class="nav-link">medalhas</li></a>
+            <a href="contato.html"><li class="nav-link">contato</li></a>
+        </ul>
+        
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="title">
+                    <span class="word">
+                        <span index="1" style="--delay: 1;" class="special">D</span>
+                        <span index="2" style="--delay: 4;">e</span>
+                        <span index="3" style="--delay: 3;">s</span>
+                        <span index="4" style="--delay: 16;">a</span>
+                        <span index="5" style="--delay: 2;" class="special">f</span>
+                        <span index="6" style="--delay: 8;">i</span>
+                        <span index="7" style="--delay: 7;" class="special">a</span>
+                        <span index="8" style="--delay: 11;">n</span>
+                        <span index="9" style="--delay: 16;">d</span>
+                        <span index="10" style="--delay: 10;">o</span>
+                    </span>
+                    <span>&nbsp;</span>
+                    <span class="word">
+                        <span index="11" style="--delay: 14;">L</span>
+                        <span index="12" style="--delay: 12;" class="special">i</span>
+                        <span index="13" style="--delay: 6;">m</span>
+                        <span index="14" style="--delay: 14;">i</span>
+                        <span index="15" style="--delay: 9;" class="special">t</span>
+                        <span index="16" style="--delay: 16;">e</span>
+                        <span index="17" style="--delay: 7;">s</span>
+                    </span>
+                </div>
+            </div>
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="challenges">
+            <div class="text">No mundo do tiro olímpico, a precisão e a disciplina são apenas parte da equação. Atletas 
+                enfrentam uma série de desafios que vão muito além do treinamento técnico. Desde o controle emocional até 
+                as limitações financeiras, a jornada para se tornar um campeão é repleta de obstáculos que testam não apenas 
+                as habilidades, mas também a resiliência.
+            </div>
+        </section>
+        <section id="cards">
+            <div class="card-container">
+                <div class="card" onclick="toggleCardContent(1);">
+                    <div class="card-content">
+                        <div class="header" data-visible="1">
+                            <span class="material-symbols-outlined">health_and_safety</span>
+                            <div class="header-text">Desafios Físicos e Mentais</div>
+                        </div>
+                        <div class="text" data-visible="0">A preparação para competições de tiro olímpico demanda equilíbrio entre físico e mental, pois treinos intensos podem causar lesões e pressão pode gerar bloqueios. O controle emocional é vital para o sucesso.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="toggleCardContent(2);">
+                    <div class="card-content">
+                        <div class="header" data-visible="1">
+                            <span class="material-symbols-outlined">paid</span>
+                            <div class="header-text">Apoio e Financiamento</div>
+                        </div>
+                        <div class="text" data-visible="0">O equilíbrio entre a vida pessoal e a carreira esportiva é um desafio constante para os atletas, pois competições e treinos intensivos podem impactar relacionamentos e compromissos profissionais, levando a escolhas difíceis.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="toggleCardContent(3);">
+                    <div class="card-content">
+                        <div class="header" data-visible="1">
+                            <span class="material-symbols-outlined">balance</span>
+                            <div class="header-text">Equilíbrio entre Vida Pessoal e Treinamento</div>
+                        </div>
+                        <div class="text" data-visible="0">Manter um equilíbrio entre a vida pessoal e a carreira esportiva é um desafio constante para os atletas. As competições e os treinos intensivos podem impactar relacionamentos e compromissos profissionais, levando a escolhas difíceis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="conclusion">
+
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-title">Menu</div>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="sobre.html">sobre</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="destaque.html">destaque</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="desafios.html">desafios</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="medalhas.html">medalhas</a>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                        <a href="contato.html">contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-container">
+                <div>Igor Tunner &copy; 2024 <br> Todos os direitos reservados</div>
+                <div>trabalho acadêmico sem fins lucrativos</div>
+            </div>
+        </div>
+        <a href="#"><div id="anchor"><img src="files/up_double_arrow.svg" width="40px"></div></a>
+    </footer>
+    
+</body>
+</html>
